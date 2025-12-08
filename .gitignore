@@ -1,0 +1,73 @@
+# General
+*.log
+.DS_Store
+.history
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+package-lock.json # Keep this commented out unless you rely solely on Yarn
+# yarn.lock       # NEVER ignore yarn.lock if you use Yarn
+
+# React Native
+.expo/
+web-build/
+.jso/
+
+# Metro
+.metro-health-check
+
+# Testing
+coverage/
+
+# --- Android ---
+# Gradle and build
+android/.gradle
+android/local.properties
+android/*/build/
+android/build/
+android/app/build/
+
+# Android Studio and IntelliJ
+android/.idea
+android/.settings
+android/*.iml
+android/app/*.iml
+
+# Keystores (SECURITY RISK: Never commit these!)
+*.keystore
+*.jks
+
+# Fastlane (optional, if you use it)
+android/fastlane/report.xml
+android/fastlane/README.md
+
+# --- iOS ---
+# CocoaPods
+ios/Pods/
+ios/Podfile.lock # DEBATE: Most teams commit this. Only ignore if you have specific versioning conflicts.
+
+# Xcode Build and User Data
+ios/*.xcworkspace
+!ios/*.xcworkspace/contents.xcworkspacedata # Do NOT ignore this specific file
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcworkspace/xcuserdata/
+ios/build/
+ios/DerivedData/
+
+# Fastlane (optional, if you use it)
+ios/fastlane/report.xml
+ios/fastlane/screenshots
+ios/fastlane/README.md
+
+# Ruby deps
+vendor/
+vendor/bundle/
+
+# Crashlytics / Firebase config (Optional: Some teams ignore these for security, others commit them)
+# android/app/google-services.json
+# ios/GoogleService-Info.plist
